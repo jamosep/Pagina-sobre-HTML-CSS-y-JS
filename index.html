@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página sobre HTML, CSS y JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tabs">
+        <button class="tab-button html-button" onclick="openTab('html')">
+            <img src="html.png" alt="Logo de HTML">
+            <span>HTML</span>
+        </button>
+        <button class="tab-button css-button" onclick="openTab('css')">
+            <img src="css.png" alt="Logo de CSS">
+            <span>CSS</span>
+        </button>
+        <button class="tab-button js-button" onclick="openTab('js')">
+            <img src="js.png" alt="Logo de JS">
+            <span>JS</span>
+        </button>
+    </div>
+    <div id="html" class="tab-content">
+        <h1>HTML</h1>
+        <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Se define como un lenguaje de marcado, ya que utiliza etiquetas para definir la estructura y el contenido de una página web. Estas etiquetas no se visualizan en la página final, sino que le indican al navegador cómo interpretar y mostrar el contenido.</p>
+
+<div class="text-body">
+<h2>¿Para qué sirve HTML?</h2>
+        <p>HTML es la base fundamental de todas las páginas web. Permite definir los elementos básicos que componen una página, como:</p>
+        <ul>
+            <li><strong>Encabezados:</strong> Títulos y subtítulos (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.).</li>
+            <li><strong>Párrafos:</strong> Bloques de texto (<code>&lt;p&gt;</code>).</li>
+            <li><strong>Imágenes:</strong> Elementos multimedia (<code>&lt;img&gt;</code>).</li>
+            <li><strong>Enlaces:</strong> Vínculos a otras páginas web (<code>&lt;a&gt;</code>) o recursos externos.</li>
+            <li><strong>Listas:</strong> Listas ordenadas (<code>&lt;ol&gt;</code>) y no ordenadas (<code>&lt;ul&gt;</code>).</li>
+            <li><strong>Tablas:</strong> Presentaciones de datos en forma tabular (<code>&lt;table&gt;</code>).</li>
+            <li><strong>Formularios:</strong> Captura de datos del usuario (<code>&lt;form&gt;</code>).</li>
+            <li><strong>Secciones:</strong> Agrupación de contenido (<code>&lt;section&gt;</code>).</li>
+            <li><strong>División:</strong> Segmentación de contenido (<code>&lt;div&gt;</code>).</li>
+        </ul>
+
+        <h2>Aspectos relevantes de HTML:</h2>
+        <ul>
+            <li><strong>Estructura semántica:</strong> HTML5 introdujo nuevos elementos semánticos que permiten definir mejor el significado del contenido, como <code>header</code>, <code>nav</code>, <code>article</code>, <code>aside</code>, <code>footer</code>, entre otros.</li>
+            <li><strong>Accesibilidad:</strong> Es importante escribir código HTML accesible para que todas las personas, independientemente de sus habilidades o limitaciones, puedan acceder y utilizar el contenido de la página web.</li>
+            <li><strong>Validación:</strong> Se recomienda validar el código HTML para asegurarse de que cumple con los estándares y no contiene errores. Existen herramientas en línea y validadores para este fin.</li>
+            <li><strong>Combinación con CSS y JavaScript:</strong> HTML se complementa con CSS para darle estilo a la página y con JavaScript para agregar interactividad y dinamismo.</li>
+        </ul>
+
+        <h2>Recursos para aprender HTML:</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">MDN Web Docs - HTML</a></li>
+            <li><a href="https://www.w3schools.com/html/">W3Schools HTML Tutorial</a></li>
+        </ul>
+</div>
+    </div>
+    <div id="css" class="tab-content">
+        <h1>CSS</h1>
+        <p>CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo que se utiliza para dar formato a las páginas web. Se complementa con HTML, que define la estructura y el contenido de la página, y permite controlar la apariencia visual de los elementos HTML, como colores, fuentes, tamaños, márgenes, disposición y mucho más.</p>
+
+<div class="text-body">
+		<h1>¿Para qué sirve CSS?</h1>
+    		<p>CSS es esencial para crear páginas web atractivas, organizadas y consistentes. Permite:</p>
+    	<ul>
+        <li>Aplicar estilos a elementos HTML: Puedes definir estilos para elementos específicos como párrafos, encabezados, imágenes, 	enlaces, listas, tablas, formularios, etc.</li>
+        <li>Controlar colores, fuentes y tamaños: Define la paleta de colores de tu página, elige las fuentes tipográficas que desees y 	establece los tamaños de texto, encabezados y otros elementos.</li>
+        <li>Organizar el diseño: Controla el espaciado entre elementos, los márgenes, el relleno, la alineación y la posición de los 	elementos en la página.</li>
+        <li>Crear diseños responsivos: Adapta la apariencia de la página a diferentes tamaños de pantalla, como dispositivos móviles y 	tablets.</li>
+        <li>Mejorar la accesibilidad: CSS puede utilizarse para mejorar la accesibilidad de la página web para personas con discapacidades 	visuales o de otro tipo.</li>
+    </ul>
+    <h2>Sintaxis básica de CSS:</h2>
+    <p>La sintaxis básica de CSS se compone de tres partes:</p>
+    <ol>
+        <li>Selector: Define el elemento HTML al que se aplicarán los estilos. Puede ser un tipo de elemento específico (p.ej., p), una clase (p.clase-ejemplo), un ID (#mi-elemento), o combinaciones más complejas.</li>
+        <li>Propiedad: Define el aspecto que se desea modificar del elemento. Por ejemplo, color, font-family, font-size, margin, padding, width, height, display, etc.</li>
+        <li>Valor: Define el valor que se asigna a la propiedad. Por ejemplo, red, Arial, 16px, 10px, auto, etc.</li>
+    </ol>
+    <p>Las reglas CSS se escriben en pares de propiedad-valor separados por dos puntos, y las reglas se agrupan dentro de bloques delimitados por llaves {}.</p>
+    <h2>Aspectos relevantes de CSS:</h2>
+    <ul>
+        <li>Cascadas: Las reglas CSS se aplican en cascada, es decir, las reglas más específicas tienen prioridad sobre las más generales.</li>
+        <li>Selectores avanzados: CSS ofrece una amplia gama de selectores para definir con precisión a qué elementos se aplican los estilos.</li>
+        <li>Modelos de diseño: Existen diferentes modelos de diseño CSS, como el modelo de caja y el modelo de flexbox, que permiten crear diseños complejos y adaptables.</li>
+        <li>Preprocesadores CSS: Existen herramientas como Sass y LESS que facilitan la escritura de código CSS más organizado y mantenible.</li>
+    </ul>
+    <h2>Recursos para aprender CSS:</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">MDN Web Docs - CSS</a></li>
+        <li><a href="https://www.w3schools.com/css/">W3Schools CSS Tutorial</a></li>
+    </ul>
+</div>
+    </div>
+    <div id="js" class="tab-content">
+        <h1>JavaScript</h1>
+        <p>JavaScript es un lenguaje de programación de alto nivel interpretado que se utiliza principalmente en páginas web para agregar interactividad y dinamismo. Se ejecuta en el lado del cliente, es decir, en el navegador del usuario, lo que permite que las páginas web respondan a las acciones del usuario, realicen cálculos, muestren contenido dinámico y creen experiencias más atractivas e interactivas.</p>
+
+<div class="text-body">
+
+<h1>¿Para qué sirve JavaScript?</h1>
+    <p>JavaScript tiene una amplia gama de aplicaciones en el desarrollo web, incluyendo:</p>
+    <ul>
+        <li>Animaciones y efectos interactivos: Crea animaciones, transiciones y efectos visuales para mejorar la experiencia del usuario y hacer que las páginas web sean más dinámicas.</li>
+        <li>Juegos y aplicaciones web: Desarrolla juegos sencillos, aplicaciones web interactivas y herramientas en línea que se ejecutan en el navegador del usuario.</li>
+        <li>Validación de formularios: Valida la información ingresada por los usuarios en formularios, evitando errores y mejorando la seguridad de los datos.</li>
+        <li>Interacción con el usuario: Permite que la página web responda a las acciones del usuario, como clics, movimientos de mouse, eventos del teclado, etc.</li>
+        <li>Carga de contenido dinámico: Carga y actualiza contenido en la página sin necesidad de recargarla completamente, mejorando la fluidez y la experiencia del usuario.</li>
+        <li>Creación de interfaces de usuario interactivas: Desarrolla interfaces de usuario dinámicas y receptivas que se adaptan a diferentes dispositivos y tamaños de pantalla.</li>
+        <li>Acceso a la API del navegador: Permite acceder a las funcionalidades del navegador web, como la cámara, la geolocalización, el almacenamiento local y más.</li>
+        <li>Desarrollo de aplicaciones web de una sola página (SPA): Crea aplicaciones web completas que se ejecutan en una sola página, sin necesidad de cargar varias páginas diferentes.</li>
+        <li>Integración con frameworks JavaScript: Utiliza frameworks populares como React, Angular o Vue.js para facilitar el desarrollo de aplicaciones web complejas y escalables.</li>
+    </ul>
+    <h2>Sintaxis básica de JavaScript:</h2>
+    <p>JavaScript utiliza una sintaxis similar a otros lenguajes de programación, con variables, operadores, estructuras de control, funciones y objetos.</p>
+    <ul>
+        <li>Variables: Las variables almacenan datos que pueden utilizarse en el programa. Se declaran utilizando la palabra clave var, let o const, seguido del nombre de la variable y el valor inicial (opcional).</li>
+        <li>Operadores: Los operadores realizan operaciones aritméticas, lógicas y de comparación sobre los datos. Algunos operadores comunes son +, -, *, /, %, ==, !=, <, >, <=, >=, &&, ||, !, etc.</li>
+        <li>Estructuras de control: Las estructuras de control permiten controlar el flujo del programa. Algunas estructuras comunes son if-else, switch, for, while, do-while, etc.</li>
+        <li>Funciones: Las funciones son bloques de código reutilizables que realizan una tarea específica. Se definen utilizando la palabra clave function, seguido del nombre de la función, paréntesis (para los parámetros), llaves ({}) y el cuerpo de la función.</li>
+        <li>Objetos: Los objetos son colecciones de datos estructurados que contienen propiedades y métodos. Se declaran utilizando llaves ({}) y las propiedades se definen como nombre_propiedad: valor_propiedad. Los métodos son funciones asociadas al objeto.</li>
+    </ul>
+    <h2>Aspectos relevantes de JavaScript:</h2>
+    <ul>
+        <li>Lenguaje interpretado: JavaScript se interpreta en el momento de la ejecución, lo que significa que no necesita compilarse antes de ejecutarse.</li>
+        <li>Lenguaje dinámico: JavaScript es un lenguaje dinámico, lo que significa que el tipo de dato de una variable puede cambiar durante la ejecución del programa.</li>
+        <li>Lenguaje orientado a prototipos: JavaScript utiliza un modelo de herencia basado en prototipos, lo que permite crear objetos y estructuras de datos complejas.</li>
+        <li>Lenguaje multiparadigma: JavaScript es un lenguaje multiparadigma, lo que significa que combina elementos de la programación imperativa, funcional y orientada a objetos.</li>
+        <li>Lenguaje en constante evolución: JavaScript está en constante evolución, con nuevas características y funcionalidades.</li>
+    </ul>
+    <h2>Recursos para aprender JavaScript:</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN Web Docs - JavaScript</a></li>
+        <li><a href="https://www.w3schools.com/js/">W3Schools JavaScript Tutorial</a></li>
+        <li><a href="https://eloquentjavascript.net/">Eloquent JavaScript</a></li>
+    </ul>
+</div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

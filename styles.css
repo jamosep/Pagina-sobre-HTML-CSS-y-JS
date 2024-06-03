@@ -1,0 +1,94 @@
+/* Estilos para el contenido de texto */
+.tab-content .text-body {
+    color: black; /* Color de las letras */
+    background-color: white; /* Color de fondo */
+    padding: 20px; /* Espaciado interno para el texto */
+}
+
+/* Establecemos el tamaño de los botones */
+.tab-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    position: relative; /* Añadimos posicionamiento relativo para que podamos posicionar la imagen */
+}
+
+/* Establecemos el estilo de la imagen del logo */
+.tab-button img {
+    position: absolute; /* Hacemos que la imagen sea absolutamente posicionada */
+    top: 0; /* Alineamos la imagen a la parte superior del botón */
+    left: 50%; /* La imagen estará centrada horizontalmente */
+    transform: translateX(-50%); /* Corregimos la posición horizontal centrada */
+    max-width: 60%; /* Limitamos el ancho máximo de la imagen */
+    max-height: 60%; /* Limitamos la altura máxima de la imagen */
+}
+
+/* Establecemos el estilo del texto */
+.tab-button span {
+    position: absolute; /* Hacemos que el texto sea absolutamente posicionado */
+    bottom: 0; /* Alineamos el texto a la parte inferior del botón */
+    left: 0; /* Alineamos el texto a la izquierda del botón */
+    width: 100%; /* Establecemos el ancho del texto igual al ancho del botón */
+    text-align: center; /* Centramos horizontalmente el texto */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.tab-button {
+    padding: 14px 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: #333;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.tab-button:hover {
+    background-color: #555;
+}
+
+.tab-button.active {
+    background-color: #555;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border-top: 2px solid #333;
+    opacity: 0;
+    transition: opacity 5s ease;
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1;
+}
+
+#html {
+    background-color: #ffa500; /* Naranja */
+    color: white;
+}
+
+#css {
+    background-color: #add8e6; /* Azul claro */
+    color: black;
+}
+
+#js {
+    background-color: #ffff00; /* Amarillo */
+    color: black;
+}
